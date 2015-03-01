@@ -1,8 +1,6 @@
 # Mensurable
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mensurable`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A simple gem to manage anything that can be measured. You can define, convert, scale, combine, and compare measures of physical magnitudes.
 
 ## Installation
 
@@ -14,15 +12,36 @@ gem 'mensurable'
 
 And then execute:
 
-    $ bundle
+  $ bundle
 
 Or install it yourself as:
 
-    $ gem install mensurable
+  $ gem install mensurable
 
 ## Usage
 
-TODO: Write usage instructions here
+To manipulate measures of an already defined physical magnitud just refer to them directly
+  to scale them:
+    (3.inches * 12).to_s #=> '36 inches'
+    (3.inches * 12).to_f #=> 36.0
+    (3.inches * 12).to_i #=> 36
+
+  to compare them:
+    1.kilogram > 100.grams #=> true
+  
+  to convert them:
+    1.cup.to_tbsp.to_s #=> '16 tablespoons'
+
+  to combine them:
+    (5.meters + 7.kilometers).to_km.to_s #=> '7.005 kilometers'
+
+Some already defined magnitudes are Length, Area, Volume, Time and Weight.
+
+To define any new physical magnitud you must specify its class name and some units of measure and its equivalences:
+
+  Energy = Mensurable::Magnitude.new 'J' => 1, 'kJ' => 1e3
+
+  Energy.new(1, 'J').class #=> Mensurable::Energy
 
 ## Development
 

@@ -7,14 +7,14 @@ Gem::Specification.new do |spec|
   spec.name          = "mensurable"
   spec.version       = Mensurable::VERSION
   spec.authors       = ["Gianco Acosta"]
-  spec.email         = ["yacostacu@gmail.com"]
+  spec.email         = ["gianco.acosta@icloud.com"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
-  end
+  # if spec.respond_to?(:metadata)
+  #   spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
+  # end
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{A simple gem to manage anything that can be measured.}
+  spec.description   = %q{You can define, convert, scale, combine, and compare measures of physical magnitudes.}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
@@ -25,4 +25,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec"
 end
