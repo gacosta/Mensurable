@@ -20,6 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
+To define any physical magnitud you must specify its class name and some units of measure and its equivalences:
+
+  Energy = Mensurable::Magnitude.new J: 1, kJ: 1e3
+
 To manipulate measures of an already defined physical magnitud just refer to them directly
   to scale them:
     (3.inches * 12) #=> 36.inches
@@ -33,9 +37,8 @@ To manipulate measures of an already defined physical magnitud just refer to the
   to combine them:
     (5.meters + 7.kilometers) #=> 7005.0 meters
 
-To define any physical magnitud you must specify its class name and some units of measure and its equivalences:
-
-  Energy = Mensurable::Magnitude.new J: 1, kJ: 1e3
+  to print them:
+    2.pounds.to_s #=> '2.0 pounds'
 
 ## Development
 

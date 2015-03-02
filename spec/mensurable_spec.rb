@@ -36,5 +36,9 @@ describe Mensurable do
     it 'allows its measures to be combined' do
       expect(1.km + 5.m).to eq 1005.0.m
     end
+
+    it 'prints it as a string for your convenience' do
+      expect(1.km.to_s).to eq '1.0 km'
+    end
   end
 end
