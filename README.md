@@ -22,26 +22,20 @@ Or install it yourself as:
 
 To manipulate measures of an already defined physical magnitud just refer to them directly
   to scale them:
-    (3.inches * 12).to_s #=> '36 inches'
-    (3.inches * 12).to_f #=> 36.0
-    (3.inches * 12).to_i #=> 36
+    (3.inches * 12) #=> 36.inches
 
   to compare them:
     1.kilogram > 100.grams #=> true
   
   to convert them:
-    1.cup.to_tbsp.to_s #=> '16 tablespoons'
+    1.cup.tbsp #=> 16.tbsp
 
   to combine them:
-    (5.meters + 7.kilometers).to_km.to_s #=> '7.005 kilometers'
+    (5.meters + 7.kilometers) #=> 7005.0 meters
 
-Some already defined magnitudes are Length, Area, Volume, Time and Weight.
+To define any physical magnitud you must specify its class name and some units of measure and its equivalences:
 
-To define any new physical magnitud you must specify its class name and some units of measure and its equivalences:
-
-  Energy = Mensurable::Magnitude.new 'J' => 1, 'kJ' => 1e3
-
-  Energy.new(1, 'J').class #=> Mensurable::Energy
+  Energy = Mensurable::Magnitude.new J: 1, kJ: 1e3
 
 ## Development
 
