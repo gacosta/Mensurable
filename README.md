@@ -1,4 +1,5 @@
 # Mensurable
+[![Coverage Status](https://coveralls.io/repos/gacosta/Mensurable/badge.svg)](https://coveralls.io/r/gacosta/Mensurable)
 
 A simple gem to manage anything that can be measured. You can define, convert, scale, combine, and compare measures of physical magnitudes.
 
