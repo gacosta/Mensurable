@@ -55,6 +55,13 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 5. Create a new Pull Request
 
 ## Code Status
+<<<<<<< HEAD
 
 [![Coverage Status](https://travis-ci.org/gacosta/Mensurable/badge.svg)](https://travis-ci.org/gacosta/Mensurable)
 [![Coverage Status](https://coveralls.io/repos/gacosta/Mensurable/badge.svg)](https://coveralls.io/r/gacosta/Mensurable)
+=======
+<p>
+[![Coverage Status](https://travis-ci.org/gacosta/Mensurable/badge.svg)](https://travis-ci.org/gacosta/Mensurable)
+[![Coverage Status](https://coveralls.io/repos/gacosta/Mensurable/badge.svg)](https://coveralls.io/r/gacosta/Mensurable)
+</p>
+>>>>>>> origin/master
