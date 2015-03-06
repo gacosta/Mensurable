@@ -1,6 +1,8 @@
 require 'mensurable/version'
 require 'mensurable/magnitude'
 
+# Weight = Mensurable::Magnitude.new kg:1e3, g:1
+
 module Mensurable
   include Comparable
   attr_reader :value, :unit_measure
@@ -30,7 +32,7 @@ module Mensurable
   end
 
   def to_s
-    "#{value.round(2)} #{unit_measure.to_s.gsub(/_/,' ')}"
+    "#{value.round(3)} #{unit_measure.to_s.gsub(/_/,' ')}"
   end
 
 private

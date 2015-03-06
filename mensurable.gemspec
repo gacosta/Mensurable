@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A simple gem to manage anything that can be measured.}
   spec.description   = %q{You can define, convert, scale, combine, and compare measures of physical magnitudes.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/gacosta/Mensurable"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec"
-  spec.add_development_dependency "coveralls"
+  spec.add_development_dependency "bundler", '~> 1.8'
+  spec.add_development_dependency "rake", '~> 10.4'
+  spec.add_development_dependency "rspec", '~> 3.2'
+  spec.add_development_dependency "coveralls", '~> 0.7'
 end
