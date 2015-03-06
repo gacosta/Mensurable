@@ -1,7 +1,4 @@
-# Mensurable [![Build Status](https://travis-ci.org/gacosta/Mensurable.svg?branch=master)](https://travis-ci.org/gacosta/Mensurable)
-[![Coverage Status](https://coveralls.io/repos/gacosta/Mensurable/badge.svg)](https://coveralls.io/r/gacosta/Mensurable)
-[![Dependency Status](https://gemnasium.com/gacosta/Mensurable.svg)](https://gemnasium.com/gacosta/Mensurable)
-[![Code Climate](https://codeclimate.com/github/gacosta/Mensurable/badges/gpa.svg)](https://codeclimate.com/github/gacosta/Mensurable)
+# Mensurable [![Build Status](https://travis-ci.org/gacosta/Mensurable.svg?branch=master)](https://travis-ci.org/gacosta/Mensurable)[![Coverage Status](https://coveralls.io/repos/gacosta/Mensurable/badge.svg)](https://coveralls.io/r/gacosta/Mensurable)[![Dependency Status](https://gemnasium.com/gacosta/Mensurable.svg)](https://gemnasium.com/gacosta/Mensurable)[![Code Climate](https://codeclimate.com/github/gacosta/Mensurable/badges/gpa.svg)](https://codeclimate.com/github/gacosta/Mensurable)
 A simple gem to manage anything that can be measured. You can define, convert, scale, combine, and compare measures of physical magnitudes.
 
 ## Installation
